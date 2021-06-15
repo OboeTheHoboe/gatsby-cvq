@@ -4,7 +4,33 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "cvq",
+    title: "CVQ",
+    menuLinks: [
+      {
+        name: "Inicio",
+        link: "/",
+      },
+      {
+        name: "Conócenos",
+        link: "/about",
+      },
+      {
+        name: "CVQ",
+        link: "/cvq",
+      },
+      {
+        name: "RWQO",
+        link: "/rwqo",
+      },
+      {
+        name: "Publicaciones",
+        link: "/publicaciones",
+      },
+      {
+        name: "Evaluadores",
+        link: "/evaluadores",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

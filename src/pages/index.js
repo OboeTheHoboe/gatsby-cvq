@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
+import Committee from '../components/committee'
 import Hero from '../components/hero'
 import Posts from '../components/posts'
 import './global.css';
@@ -10,8 +11,8 @@ import './global.css';
 const IndexPage = ({data}) => {
   return (
     <Layout pageTitle="Home Page">
-      <p>Experimento</p>
-      <Hero> Comité Organizador </Hero>
+      <Hero />
+      <Committee> Comité Organizador </Committee>
       <Posts />
     </Layout>
   )

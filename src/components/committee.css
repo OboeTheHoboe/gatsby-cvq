@@ -1,0 +1,23 @@
+.committee{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 80vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.member {
+    padding: 4rem;
+    background: #fff;
+}
+
+.bio-wrapper {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+

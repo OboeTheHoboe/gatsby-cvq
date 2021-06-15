@@ -38,24 +38,26 @@ const Posts = () => {
             <h1>¡Últimas Noticias!</h1>
             <div className='cards__container'>
                 <div className='cards__wrapper'>
-                    <ul className='cards__items'>
+                  <ul className='cards__items'>
                     {posts.map((post, index)=>{
 
                         if(index < 2){
                             return(
+                              
                                 <PostsItem 
                                 path= {post.slug.current}
                                 topic = {post.Topic}
                                 title= {post.title}
                                 image= {getImage(post.image.asset.gatsbyImageData)}/>
+                                
                             )
                         }
                         else{
                             return;
                         }
                     })}
-                    </ul>
-                    <ul className='cards__items'>
+                  </ul>
+                  <ul className='cards__items'>
                     {posts.map((post, index)=>{
 
                         if(index > 1){
@@ -71,7 +73,7 @@ const Posts = () => {
                             return;
                         }
                     })}
-                    </ul>
+                  </ul>
                 </div>
             </div>
         </div>
