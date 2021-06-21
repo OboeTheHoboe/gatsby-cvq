@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import Button from './Button';
+import Button from './button';
 import './hero.css';
 
 const Hero = () =>{
